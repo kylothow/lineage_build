@@ -3,8 +3,8 @@
 source ~/.profile
 
 cd ~/android/lineage/.repo/local_manifests
-git reset --hard
-git pull
+git fetch
+git reset --hard origin/lineage-18.1
 cd ../..
 repo sync -c --force-sync -j$(nproc) --no-tags --prune
 ###
