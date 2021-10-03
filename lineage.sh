@@ -17,5 +17,5 @@ cd ../..
 ###
 source build/envsetup.sh
 mka clean
-breakfast lineage_dumpling-user
+lunch lineage_dumpling-user
 mka bacon -j$(nproc)
