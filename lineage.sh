@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source ~/.profile
+set -x
 
 cd ~/android/lineage/.repo/local_manifests
 git fetch
