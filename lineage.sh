@@ -18,4 +18,4 @@ cd ../..
 source build/envsetup.sh
 mka clean
 breakfast lineage_dumpling-user
-mka bacon -j1
+mka bacon -j$(nproc)
