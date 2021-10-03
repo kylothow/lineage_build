@@ -17,6 +17,6 @@ git cherry-pick e020f2130224fbdbec1f83e3adfd06a9764cca87
 cd ../..
 ###
 source build/envsetup.sh
-mka clean
+mka clean -j$(nproc)
 lunch lineage_dumpling-user
 mka bacon -j$(nproc)
