@@ -13,6 +13,10 @@ git reset --hard
 git fetch https://github.com/masemoel/build_soong_legion-r 11
 git cherry-pick b45c5ae22f74f1bdbb9bfbdd06ecf7a25033c78b
 git cherry-pick e020f2130224fbdbec1f83e3adfd06a9764cca87
+cd ../core
+wget https://github.com/kylothow/android_build/commit/a6464bdbdc356c8be63cbad6bdd9cbab51cf76d6.patch
+patch < a6464bdbdc356c8be63cbad6bdd9cbab51cf76d6.patch
+rm a6464bdbdc356c8be63cbad6bdd9cbab51cf76d6.patch
 cd ../..
 ###
 source build/envsetup.sh
