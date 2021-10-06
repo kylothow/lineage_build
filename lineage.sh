@@ -17,6 +17,7 @@ cd ../core
 wget https://github.com/kylothow/android_build/commit/a6464bdbdc356c8be63cbad6bdd9cbab51cf76d6.patch
 patch -N < a6464bdbdc356c8be63cbad6bdd9cbab51cf76d6.patch
 rm a6464bdbdc356c8be63cbad6bdd9cbab51cf76d6.patch
+rm -f Makefile.rej
 cd ../..
 ###
 source build/envsetup.sh
